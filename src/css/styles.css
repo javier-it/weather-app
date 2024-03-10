@@ -1,0 +1,124 @@
+:root{
+    --bg-color: #181818;
+    --bg-wrapper: linear-gradient(333deg, rgba(6,1,69,1) 18%, rgba(34,86,136,1) 50%, rgba(62,148,189,1) 74%, rgba(65,187,246,1) 93%);
+    --text-color: #fafafa;
+    --form-color: #e7e4e4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body { 
+    display: grid;
+    place-content: center;
+    background-color: var(--bg-color);
+    min-height: 100dvh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8em; 
+    background: var(--bg-wrapper);
+    align-items: center;
+    height: 80vh;
+    width: 25rem;
+    padding: 2rem;
+}
+
+.input-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.city-name-input {
+    padding-left: 1.5em;
+    height: 4em;
+    outline: none;
+    border: none;
+    border-radius: 4em;
+    background-color: var(--form-color);
+    width: 80%;
+}
+
+.search-city-button {
+    height: 4em;
+    width: 4em;
+    outline: none;
+    border: none;
+    background-color: var(--form-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-city-button i {
+    font-size: 1.6em;
+}
+
+.weather {
+    margin: auto 0;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.weather-icon {
+    width: 10em;
+}
+
+.temperature {
+    font-size: 3.5em;
+}
+
+.city {
+    font-size: 1.2em;
+}
+
+.details { 
+    width: 90%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+.item {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+}
+
+.item img {
+    height: 4em;
+}
+
+
+@media (max-width: 600px) {
+    body{
+        display: flex;
+    }
+
+    .wrapper {
+        background-color: transparent;
+        display: flex;
+        border-radius: 0;
+        height: 100dvh;
+    }
+    
+    .weather {
+        margin: auto 0;
+    }
+
+    .details{
+        margin: 0;
+        font-size: 11px;
+    }
+}

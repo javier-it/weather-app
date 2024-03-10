@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Weather App</title>
+</head>
+<body >
+    <div class="wrapper">
+
+        <div class="input-wrapper">
+            <input placeholder="Enter city name" type="text" id="userInput" class="city-name-input">
+            <button id="userButton" class="search-city-button"><i class="bi bi-search"></i></button>
+        </div>
+
+        <div class="weather">
+            <img class="weather-icon" src="src/images/clear.png" alt="">
+            <p class="temperature">22°C</p>
+            <p class="city">New York</p>
+        </div>
+
+
+        <div class="details">
+
+            <div class="item">
+                <img src="src/images/humidity.png" alt="">
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="src/images/wind.png" alt="">
+                <div>
+                    <p class="wind">15 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
